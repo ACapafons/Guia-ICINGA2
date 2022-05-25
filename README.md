@@ -133,7 +133,76 @@ Ha importado las plantillas de base de datos Icinga2 en MySQL Server.
 
 ### Instalación de la interfaz web de icinga2:
 
+A continuación, necesitamos instalar el servidor web Apache y todo el software necesario.
 
+En la consola Linux, utilice los siguientes comandos para instalar los paquetes necesarios.
+
+```bash
+apt-get -y install apache2 php libapache2-mod-php php-cli php-opcache php-gd
+apt-get -y install php-mysql php-mbstring php-xml php-gd php-json php-curl
+apt-get -y install php-bcmath php-ldap php-intl php-readline 
+```
+Localice el archivo de configuración PHP en su sistema.
+
+Edite el archivo de configuración PHP y establezca la zona horaria correcta.
+
+```bash
+updatedb
+locate php.ini
+nano /etc/php/7.2/apache2/php.ini
+```
+Tenga en cuenta que su versión PHP y la ubicación del archivo pueden no ser la misma mía.
+
+Como ejemplo, nuestra zona horaria se estableció en América/Sao_Paulo.
+
+```bash
+date.timezone = America/Sao_Paulo
+```
+Reinicie el servicio Apache.
+```bash
+service apache2 restart
+```
+Acceda al servidor de bases de datos MySQL.
+```bash
+mysql -u root -p
+```
+Cree una base de datos denominada icingaweb_db.
+```bash
+CREATE DATABASE icingaweb_db CHARACTER SET UTF8 COLLATE UTF8_BIN;
+```
+Cree un usuario mysql denominado icingaweb_db.
+```bash
+CREATE USER 'icingaweb_db'@'%' IDENTIFIED BY 'onmula';
+```
+Conceda al usuario MySQL el nombre icingaweb_db permiso sobre la base de datos denominada icingaweb_db.
+
+```bash
+GRANT ALL PRIVILEGES ON icingaweb_db.* TO 'icingaweb_db'@'%';
+quit;
+```
+Instale el paquete de interfaz web de Icinga denominado icingaweb2.
+```bash
+apt-get install icingaweb2
+```
+Reinicie el servicio Apache.
+
+```bash
+service apache2 restart
+```
+Genere el token de instalación de Icinga.
+```bash
+icingacli setup token create
+The newly generated setup token is: 27df50a1fffc3aa5
+```
+Abra su navegador e introduzca la dirección IP de su servidor web más /icingaweb2.
+
+En nuestro ejemplo, se introdujo la siguiente URL en el navegador:
+
+http://192.168.15.10/icingaweb2](http://10.0.2.15/icingaweb2/setup)
+
+Se debe presentar la interfaz de instalación web de Icinga2.
+
+Ingrese el token de configuración de Icinga web2.
 
 
 
