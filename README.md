@@ -16,4 +16,6 @@ Utilice el siguiente comando para descubrir su nombre de código Ubuntu linux.
 ```bash
 . /etc/os-release; if [ ! -z ${UBUNTU_CODENAME+x} ]; then DIST="${UBUNTU_CODENAME}"; else DIST="$(lsb_release -c| awk '{print $2}')"; fi;
 set | grep DIST
-´´´
+```
+En nuestro ejemplo, el código Ubuntu linux es DISCO.
+Agregue el repositorio oficial de Icinga2 a la base de datos APT.
