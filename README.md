@@ -43,3 +43,53 @@ Habilite el servicio Icinga2 para que se inicie automáticamente durante el tiem
 ```bash
 systemctl enable icinga2
 ```
+Listo, ya habriamos terminado la instalación de Icinga2
+
+
+### Instalación de MySQL:
+
+Instale el paquete icinga2-ido-mysql.
+
+Esto permitirá al servidor Icinga2 almacenar la configuración en Mysql.
+```bash
+apt-get update
+apt-get install icinga2-ido-mysql
+```
+Habilite la función ido-mysql del Icinga 2.
+IMAGEN
+¿Configurar la base de datos para icinga2-ido-mysql con dbconfig-common?
+IMAGEN
+
+Habilite la característica ido-mysql.
+
+```bash
+icinga2 feature enable command  ido-mysql
+```
+Reiniciar Icinga2
+```bash
+service icinga2 restart
+```
+Instale el servicio de base de datos MySQL.
+
+```bash
+apt-get install mysql-server mysql-client
+```
+Acceda al servidor de bases de datos MySQL.
+
+```bash
+mysql -u root -p
+```
+Establezca una contraseña para el usuario raíz de MySQL.
+
+
+
+
+
+
+
+
+
+
+
+
+
