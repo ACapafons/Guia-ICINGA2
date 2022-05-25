@@ -18,4 +18,9 @@ Utilice el siguiente comando para descubrir su nombre de código Ubuntu linux.
 set | grep DIST
 ```
 En nuestro ejemplo, el código Ubuntu linux es DISCO.
+
 Agregue el repositorio oficial de Icinga2 a la base de datos APT.
+```bash
+echo "deb https://packages.icinga.com/ubuntu icinga-${DIST} main" > /etc/apt/sources.list.d/${DIST}-icinga.list
+echo "deb-src https://packages.icinga.com/ubuntu icinga-${DIST} main" >> /etc/apt/sources.list.d/${DIST}-icinga.list
+```
