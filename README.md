@@ -194,6 +194,11 @@ Genere el token de instalación de Icinga.
 icingacli setup token create
 The newly generated setup token is: 27df50a1fffc3aa5
 ```
+En caso de luego no recordar o perder el token generado, podemos usar el siguiente comadno: 
+```bash
+icingacli setup token show
+```
+
 Abra su navegador e introduzca la dirección IP de su servidor web más /icingaweb2.
 
 En nuestro ejemplo, se introdujo la siguiente URL en el navegador:
