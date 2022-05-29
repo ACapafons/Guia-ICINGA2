@@ -208,7 +208,6 @@ http://10.0.2.15/icingaweb2/setup
 Se debe presentar la interfaz de instalación web de Icinga2.
 
 Ingrese el token de configuración de Icinga web2.
-
 ![1](https://user-images.githubusercontent.com/90779690/170890276-428bcba4-e789-46d3-9868-a83fc6aeba72.PNG)
 
 Una vez introducimos el Token, continuemos a la configuracion de icinga web 2.
@@ -233,7 +232,6 @@ En la pantalla Recurso de base de datos de Icinga, realice la siguiente configur
 • Contraseña - onmula
 
 Haga clic en el botón Siguiente.
-
 ![5](https://user-images.githubusercontent.com/90779690/170890287-8fa402c8-29d3-4e56-bc9a-2016d8c02236.PNG)
 
 En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2.
@@ -307,12 +305,10 @@ Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 
 • Iicnga2 nombre de usuario predeterminado: Usted estableció antes, eneste caso será "admin".
 • Contraseña predeterminada de Icinga2: Usted estableció antes, en este caso será "onmula".
-
 ![12](https://user-images.githubusercontent.com/90779690/170890758-7017b84c-3755-4d30-95df-a8a769836831.PNG)
 
 
 Se debe mostrar la interfaz de inicio de sesión de Icinga2.
-
 ![13](https://user-images.githubusercontent.com/90779690/170890800-231231b6-7324-412f-b5fa-16e4b988e079.PNG)
 
 Existe la posibilidad que nos salten alertas en mi caso, 1 crítica, llamada "disk" la cual surge por un problema con los directorios, pero no nos afectara. Otras 2 alertas más que solo nos dirá Warning y se resuelven muy facil.
