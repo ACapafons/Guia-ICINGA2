@@ -229,13 +229,18 @@ En la pantalla Recurso de base de datos de Icinga, realice la siguiente configur
 • Contraseña - onmula
 
 Haga clic en el botón Siguiente.
+
 ![5](https://user-images.githubusercontent.com/90779690/170890287-8fa402c8-29d3-4e56-bc9a-2016d8c02236.PNG)
+
 En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2.
 ![6](https://user-images.githubusercontent.com/90779690/170890288-d4ca74cf-8133-4652-97c6-e019244748ec.PNG)
+
 Establezca el nombre de back-end icingaweb2 y haga clic en el botón Siguiente.
 ![7](https://user-images.githubusercontent.com/90779690/170890292-0ed50ed5-d970-49f3-a3d5-156ff2640916.PNG)
+
 Establezca una cuenta administrativa para acceder a la interfaz web de Icinga.
 ![8](https://user-images.githubusercontent.com/90779690/170890297-84916e0c-6830-46e5-bd01-ffbf58726e78.PNG)
+
 Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
 
 • Mostrar Stacktraces - Habilitado
@@ -248,10 +253,12 @@ Pantalla de configuración de la aplicación, realice la configuración de segui
 
 Haga clic en el botón Siguiente.
 ![9](https://user-images.githubusercontent.com/90779690/170890299-3eb9b9f5-cebc-4d25-9bc8-b2f39b98f43c.PNG)
+
 En la pantalla de resumen de instalación de Icinga, haga clic en el botón Siguiente.
 
 En la pantalla de bienvenida, haga clic en el botón Siguiente.
 ![10](https://user-images.githubusercontent.com/90779690/170890302-2b3deda7-a6ce-4263-af8e-f54907c38089.PNG)
+
 En la pantalla del back-end de supervisión, realice la siguiente configuración:
 
 • Nombre backend - icinga
