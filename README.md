@@ -224,11 +224,17 @@ En tipo de autenticación lo dejaremos por defecto en Database o Base de datos.
 En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
 
 • Nombre del recurso - icingaweb_db
+
 • Tipo de base de datos - MYSQL
+
 • Anfitrión - localhost
+
 • Puerto - 3306
+
 • Nombre de la base de datos - icingaweb_db
+
 • Nombre de usuario - icingaweb_db
+
 • Contraseña - onmula
 
 Haga clic en el botón Siguiente.
@@ -249,11 +255,17 @@ Establezca una cuenta administrativa para acceder a la interfaz web de Icinga.
 Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
 
 • Mostrar Stacktraces - Habilitado
+
 • Mostrar mensajes de estado de la aplicación - Habilitado
+
 • Tipo de almacenamiento de preferencias de usuario - Base de datos
+
 • Tipo de registro - Syslog
+
 • Nivel de registro - Error
+
 • Prefijo de aplicación - icingaweb2
+
 • Facilidad - Usuario
 
 Haga clic en el botón Siguiente.
@@ -267,9 +279,11 @@ En la pantalla de bienvenida, haga clic en el botón Siguiente.
 Ahora nos llevara a la pantalla del back-end de supervisión, realice la siguiente configuración:
 
 • Nombre backend - icinga
+
 • Tipo de backend - IDO
 
 Luego en la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
+
 • Nombre del recurso - icinga_ido
 
 • Tipo de base de datos - MYSQL
@@ -290,8 +304,11 @@ Haga clic en el botón Siguiente.
 En la pantalla Transporte de comandos, realice la siguiente configuración:
 
 • Nombre del transporte - icinga2
+
 • Tipo de transporte - Archivo de comandación local
+
 • Archivo De comunicación - /var/run/icinga2/cmd/icinga2.cmd
+
 
 Haga clic en el botón Siguiente.
 
@@ -313,6 +330,7 @@ Después de finalizar la instalación haga clic en la opción: Iniciar sesión e
 Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 
 • Iicnga2 nombre de usuario predeterminado: Usted estableció antes, eneste caso será "admin".
+
 • Contraseña predeterminada de Icinga2: Usted estableció antes, en este caso será "onmula".
 ![12](https://user-images.githubusercontent.com/90779690/170890758-7017b84c-3755-4d30-95df-a8a769836831.PNG)
 
