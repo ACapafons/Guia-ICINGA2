@@ -276,7 +276,7 @@ Luego en la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), 
 • Puerto - 3306
 • Nombre de la base de datos - icinga2
 • Nombre de usuario - icinga2
-• Contraseña - kamisama123
+• Contraseña - onmula
 
 Haga clic en el botón Siguiente.
 
