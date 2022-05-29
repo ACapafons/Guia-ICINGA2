@@ -26,7 +26,10 @@ echo "deb-src https://packages.icinga.com/ubuntu icinga-${DIST} main" >> /etc/ap
 ```
 Actualice la base de datos APT e instale el paquete Icinga2.
 ```bash
-apt-get update
+apt-get update![1]
+
+(https://user-images.githubusercontent.com/90779690/170890169-603b3933-07e1-4809-8657-e88c5e993933.PNG)
+
 apt-get install icinga2
 ```
 Instale los plugins de monitoreo estándar del Icinga2.
