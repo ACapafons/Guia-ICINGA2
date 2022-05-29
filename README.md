@@ -2,7 +2,7 @@
 ## Guía de instalación de Icinga2.
 ### Instalación en Ubuntu Linux:
 
-!(https://user-images.githubusercontent.com/90779690/170890169-603b3933-07e1-4809-8657-e88c5e993933.PNG)
+![1](https://user-images.githubusercontent.com/90779690/170890169-603b3933-07e1-4809-8657-e88c5e993933.PNG)
 
 Utilice apt-get para instalar los paquetes necesarios.
 ```bash
