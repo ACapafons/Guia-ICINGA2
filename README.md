@@ -271,11 +271,17 @@ Ahora nos llevara a la pantalla del back-end de supervisión, realice la siguien
 
 Luego en la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
 • Nombre del recurso - icinga_ido
+
 • Tipo de base de datos - MYSQL
+
 • Anfitrión - localhost
+
 • Puerto - 3306
+
 • Nombre de la base de datos - icinga2
+
 • Nombre de usuario - icinga2
+
 • Contraseña - onmula
 
 Haga clic en el botón Siguiente.
