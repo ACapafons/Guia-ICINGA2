@@ -2,8 +2,6 @@
 ## Guía de instalación de Icinga2.
 ### Instalación en Ubuntu Linux:
 
-![1](https://user-images.githubusercontent.com/90779690/170890169-603b3933-07e1-4809-8657-e88c5e993933.PNG)
-
 Utilice apt-get para instalar los paquetes necesarios.
 ```bash
 apt-get update
@@ -210,6 +208,18 @@ http://192.168.15.10/icingaweb2](http://10.0.2.15/icingaweb2/setup)
 Se debe presentar la interfaz de instalación web de Icinga2.
 
 Ingrese el token de configuración de Icinga web2.
+
+![1](https://user-images.githubusercontent.com/90779690/170890276-428bcba4-e789-46d3-9868-a83fc6aeba72.PNG)
+![2](https://user-images.githubusercontent.com/90779690/170890279-3092c117-6e25-45bc-8315-5f729bd47ed3.PNG)
+![3](https://user-images.githubusercontent.com/90779690/170890282-dfb5bfa0-f921-4183-8777-5edbc9ecac91.PNG)
+![4](https://user-images.githubusercontent.com/90779690/170890285-0aeb2bd8-2328-47bf-acdc-5a58a7693e1e.PNG)
+![5](https://user-images.githubusercontent.com/90779690/170890287-8fa402c8-29d3-4e56-bc9a-2016d8c02236.PNG)
+![6](https://user-images.githubusercontent.com/90779690/170890288-d4ca74cf-8133-4652-97c6-e019244748ec.PNG)
+![7](https://user-images.githubusercontent.com/90779690/170890292-0ed50ed5-d970-49f3-a3d5-156ff2640916.PNG)
+![8](https://user-images.githubusercontent.com/90779690/170890297-84916e0c-6830-46e5-bd01-ffbf58726e78.PNG)
+![9](https://user-images.githubusercontent.com/90779690/170890299-3eb9b9f5-cebc-4d25-9bc8-b2f39b98f43c.PNG)
+![10](https://user-images.githubusercontent.com/90779690/170890302-2b3deda7-a6ce-4263-af8e-f54907c38089.PNG)
+![11](https://user-images.githubusercontent.com/90779690/170890304-734e05b0-2209-45b1-a8d8-7b6edf4a848d.PNG)
 
 
 
