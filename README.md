@@ -301,17 +301,25 @@ Después de finalizar la instalación haga clic en la opción: Iniciar sesión e
 
 Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 
-• Iicnga2 nombre de usuario predeterminado: Usted estableció antes
-• Contraseña predeterminada de Icinga2: Usted estableció antes
+• Iicnga2 nombre de usuario predeterminado: Usted estableció antes, eneste caso será "admin".
+• Contraseña predeterminada de Icinga2: Usted estableció antes, en este caso será "onmula".
 
 ![12](https://user-images.githubusercontent.com/90779690/170890758-7017b84c-3755-4d30-95df-a8a769836831.PNG)
 
 
 Se debe mostrar la interfaz de inicio de sesión de Icinga2.
 
+![13](https://user-images.githubusercontent.com/90779690/170890800-231231b6-7324-412f-b5fa-16e4b988e079.PNG)
 
-
-
+Existe la posibilidad que nos salten alertas en mi caso, 1 crítica, llamada "disk" la cual surge por un problema con los directorios, pero no nos afectara. Otras 2 alertas más que solo nos dirá Warning y se resuelven muy facil.
+Una alerta se resolvera ejecutando:
+```bash
+sudo apt-het update
+```
+y la segunda alerta se resuelve ejecutando:
+```bash
+sudo apt-get install ssh
+```
 
 
 
