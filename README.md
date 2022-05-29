@@ -232,6 +232,9 @@ En la pantalla Recurso de base de datos de Icinga, realice la siguiente configur
 • Contraseña - onmula
 
 Haga clic en el botón Siguiente.
+
+
+
 ![5](https://user-images.githubusercontent.com/90779690/170890287-8fa402c8-29d3-4e56-bc9a-2016d8c02236.PNG)
 
 En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2.
