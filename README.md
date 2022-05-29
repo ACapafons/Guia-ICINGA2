@@ -259,13 +259,52 @@ En la pantalla de resumen de instalación de Icinga, haga clic en el botón Sigu
 En la pantalla de bienvenida, haga clic en el botón Siguiente.
 ![10](https://user-images.githubusercontent.com/90779690/170890302-2b3deda7-a6ce-4263-af8e-f54907c38089.PNG)
 
-En la pantalla del back-end de supervisión, realice la siguiente configuración:
+Ahora nos llevara a la pantalla del back-end de supervisión, realice la siguiente configuración:
 
 • Nombre backend - icinga
 • Tipo de backend - IDO
 
+Luego en la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
+• Nombre del recurso - icinga_ido
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icinga2
+• Nombre de usuario - icinga2
+• Contraseña - kamisama123
+
+Haga clic en el botón Siguiente.
+
+
+En la pantalla Transporte de comandos, realice la siguiente configuración:
+
+• Nombre del transporte - icinga2
+• Tipo de transporte - Archivo de comandación local
+• Archivo De comunicación - /var/run/icinga2/cmd/icinga2.cmd
+
+Haga clic en el botón Siguiente.
+
+
+En la pantalla Seguridad de supervisión, realice la siguiente configuración:
+
+• Variables personalizadas protegidas - *pw*,*pass*,community
+
+Haga clic en el botón Siguiente.
+
+En la última pantalla, haga clic en el botón Finalizar y espere a que finalice la instalación de Icinga2.
+
+
 Haga clic en el botón Siguiente.
 ![11](https://user-images.githubusercontent.com/90779690/170890304-734e05b0-2209-45b1-a8d8-7b6edf4a848d.PNG)
+
+Después de finalizar la instalación haga clic en la opción: Iniciar sesión en Icinga Web 2.
+
+Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
+
+• Iicnga2 nombre de usuario predeterminado: Usted estableció antes
+• Contraseña predeterminada de Icinga2: Usted estableció antes
+
+Se debe mostrar la interfaz de inicio de sesión de Icinga2.
 
 
 
