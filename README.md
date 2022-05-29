@@ -210,12 +210,16 @@ Se debe presentar la interfaz de instalación web de Icinga2.
 Ingrese el token de configuración de Icinga web2.
 
 ![1](https://user-images.githubusercontent.com/90779690/170890276-428bcba4-e789-46d3-9868-a83fc6aeba72.PNG)
+
 Una vez introducimos el Token, continuemos a la configuracion de icinga web 2.
 ![2](https://user-images.githubusercontent.com/90779690/170890279-3092c117-6e25-45bc-8315-5f729bd47ed3.PNG)
+
 Activamos la opción que dice "Monitoring", que se refiere al modulo de monitorización.
 ![3](https://user-images.githubusercontent.com/90779690/170890282-dfb5bfa0-f921-4183-8777-5edbc9ecac91.PNG)
+
 Verifiamos que tengamos activas y funcionando los apartados de "Versión de PHP", "Linux Plataforma" y "Módulo de PHP:OpenSSL"
 ![4](https://user-images.githubusercontent.com/90779690/170890285-0aeb2bd8-2328-47bf-acdc-5a58a7693e1e.PNG)
+
 En tipo de autenticación lo dejaremos por defecto en Database o Base de datos.
 
 En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
