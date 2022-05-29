@@ -304,7 +304,12 @@ Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 • Iicnga2 nombre de usuario predeterminado: Usted estableció antes
 • Contraseña predeterminada de Icinga2: Usted estableció antes
 
+![12](https://user-images.githubusercontent.com/90779690/170890758-7017b84c-3755-4d30-95df-a8a769836831.PNG)
+
+
 Se debe mostrar la interfaz de inicio de sesión de Icinga2.
+
+
 
 
 
