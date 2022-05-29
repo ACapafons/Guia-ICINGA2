@@ -203,22 +203,61 @@ Abra su navegador e introduzca la dirección IP de su servidor web más /icingaw
 
 En nuestro ejemplo, se introdujo la siguiente URL en el navegador:
 
-http://192.168.15.10/icingaweb2](http://10.0.2.15/icingaweb2/setup)
+http://10.0.2.15/icingaweb2/setup
 
 Se debe presentar la interfaz de instalación web de Icinga2.
 
 Ingrese el token de configuración de Icinga web2.
 
 ![1](https://user-images.githubusercontent.com/90779690/170890276-428bcba4-e789-46d3-9868-a83fc6aeba72.PNG)
+Una vez introducimos el Token, continuemos a la configuracion de icinga web 2.
 ![2](https://user-images.githubusercontent.com/90779690/170890279-3092c117-6e25-45bc-8315-5f729bd47ed3.PNG)
+Activamos la opción que dice "Monitoring", que se refiere al modulo de monitorización.
 ![3](https://user-images.githubusercontent.com/90779690/170890282-dfb5bfa0-f921-4183-8777-5edbc9ecac91.PNG)
+Verifiamos que tengamos activas y funcionando los apartados de "Versión de PHP", "Linux Plataforma" y "Módulo de PHP:OpenSSL"
 ![4](https://user-images.githubusercontent.com/90779690/170890285-0aeb2bd8-2328-47bf-acdc-5a58a7693e1e.PNG)
+En tipo de autenticación lo dejaremos por defecto en Database o Base de datos.
+
+En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
+
+• Nombre del recurso - icingaweb_db
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icingaweb_db
+• Nombre de usuario - icingaweb_db
+• Contraseña - onmula
+
+Haga clic en el botón Siguiente.
 ![5](https://user-images.githubusercontent.com/90779690/170890287-8fa402c8-29d3-4e56-bc9a-2016d8c02236.PNG)
+En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2.
 ![6](https://user-images.githubusercontent.com/90779690/170890288-d4ca74cf-8133-4652-97c6-e019244748ec.PNG)
+Establezca el nombre de back-end icingaweb2 y haga clic en el botón Siguiente.
 ![7](https://user-images.githubusercontent.com/90779690/170890292-0ed50ed5-d970-49f3-a3d5-156ff2640916.PNG)
+Establezca una cuenta administrativa para acceder a la interfaz web de Icinga.
 ![8](https://user-images.githubusercontent.com/90779690/170890297-84916e0c-6830-46e5-bd01-ffbf58726e78.PNG)
+Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
+
+• Mostrar Stacktraces - Habilitado
+• Mostrar mensajes de estado de la aplicación - Habilitado
+• Tipo de almacenamiento de preferencias de usuario - Base de datos
+• Tipo de registro - Syslog
+• Nivel de registro - Error
+• Prefijo de aplicación - icingaweb2
+• Facilidad - Usuario
+
+Haga clic en el botón Siguiente.
 ![9](https://user-images.githubusercontent.com/90779690/170890299-3eb9b9f5-cebc-4d25-9bc8-b2f39b98f43c.PNG)
+En la pantalla de resumen de instalación de Icinga, haga clic en el botón Siguiente.
+
+En la pantalla de bienvenida, haga clic en el botón Siguiente.
 ![10](https://user-images.githubusercontent.com/90779690/170890302-2b3deda7-a6ce-4263-af8e-f54907c38089.PNG)
+En la pantalla del back-end de supervisión, realice la siguiente configuración:
+
+• Nombre backend - icinga
+• Tipo de backend - IDO
+
+Haga clic en el botón Siguiente.
 ![11](https://user-images.githubusercontent.com/90779690/170890304-734e05b0-2209-45b1-a8d8-7b6edf4a848d.PNG)
 
 
