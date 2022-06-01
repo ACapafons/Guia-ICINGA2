@@ -423,6 +423,9 @@ object Service "ssh" {
     check_command = "ssh"
 
 
+  *Ejemplo de monitorización*
+
+![monitorizacion](https://user-images.githubusercontent.com/90779690/171417667-445620cf-0d0a-445b-b96e-c64e9bb79d44.png)
 
 
 
