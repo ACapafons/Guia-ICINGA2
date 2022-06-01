@@ -467,19 +467,24 @@ object User "icingaadmin" {
   display_name = "Icinga 2 Admin"
   groups = [ "icingaadmins" ]
 
-  email = "sergiodtd@gmail.com"
+  email = "email@gmail.com"
 }
 
 object UserGroup "icingaadmins" {
   display_name = "Icinga 2 Admin Group"
 }
-Para recibir notificaciones de un servicio determinado pondremos la línea de comando siguiente dentro de hosts.conf y services.conf:
-
-vars.notification["mail"] = {
+ ```
+  
+Si diseamos recibir las notificaciones de un servicio en especifico debemos poner: 
+  
+  ```bash
+  vars.notification["mail"] = {
  groups = [ "icingaadmins" ]
 }
  ```
+  Dentro de hosts.conf y services.conf.
 
+ 
 
 
 
