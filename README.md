@@ -363,12 +363,14 @@ Iremos al fichero hosts.conf en la ruta:
 Dentro de este, escribiremos:
 
   *Para conectar con el cliente*
+
 object Host "Cliente" {
     import "generic-host"
     address = "10.0.2.15"
 }
 
   *Para monitorizar la CPU del cliente*
+
 object Service "CPU" {
   import "generic-service"
   host_name = "Cliente"
@@ -376,6 +378,7 @@ object Service "CPU" {
 }
 
   *Para monitorizar la RAM del cliente*
+
 object Service "RAM" {
   import "generic-service"
   host_name = "Cliente"
@@ -383,6 +386,7 @@ object Service "RAM" {
 }
 
   *Para monitorizar el disco del cliente*
+
 object Service "Disco" {
   import "generic-service"
   host_name = "Cliente"
@@ -390,12 +394,14 @@ object Service "Disco" {
 }
 
   *Para monitorizar la página web del instituto*
+
 object Host "Instituto DPM" {
     import "generic-host"
     address = "81.88.48.71"
 }
 
   *Otra forma de monitorizar una página web que actualmente no funciona*
+
 object Host "Instituto DPM 2" {
     address = "81.88.48.71"
     import "generic-host"
