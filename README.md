@@ -347,50 +347,55 @@ y la segunda alerta se resuelve ejecutando:
 ```bash
 sudo apt-get install ssh
 ```
+
 ### Configuración:
 
 Para que los cambios sucedan tendremos que utilizar el comando:
 
+```bash
 systemctl restart icinga2
-Lo primero que haremos será ir al fichero hosts.conf en la ruta:
+```
+
+Iremos al fichero hosts.conf en la ruta:
 
 /etc/icinga2/conf.d/hosts.conf
+
 Dentro de este, escribiremos:
 
-Para conectar con el cliente
+  *Para conectar con el cliente*
 object Host "Cliente" {
     import "generic-host"
     address = "10.0.2.15"
 }
 
-/*Para monitorizar la CPU del cliente*/
+  *Para monitorizar la CPU del cliente*
 object Service "CPU" {
   import "generic-service"
   host_name = "Cliente"
   check_command = "load"
 }
 
-Para monitorizar la RAM del cliente
+  *Para monitorizar la RAM del cliente*
 object Service "RAM" {
   import "generic-service"
   host_name = "Cliente"
   check_command = "swap"
 }
 
-Para monitorizar el disco del cliente
+  *Para monitorizar el disco del cliente*
 object Service "Disco" {
   import "generic-service"
   host_name = "Cliente"
   check_command = "disk"
 }
 
-Para monitorizar la página web del instituto
+  *Para monitorizar la página web del instituto*
 object Host "Instituto DPM" {
     import "generic-host"
     address = "81.88.48.71"
 }
 
-/*Otra forma de monitorizar una página web que actualmente no funciona*/
+  *Otra forma de monitorizar una página web que actualmente no funciona*
 object Host "Instituto DPM 2" {
     address = "81.88.48.71"
     import "generic-host"
@@ -399,10 +404,12 @@ object Host "Instituto DPM 2" {
         http_ssl = true
       }
 }
-Ahora entraremos en services.conf en la ruta:
+
+  Ahora entraremos en services.conf en la ruta:
 
 /etc/icinga2/conf.d/services.conf
-Escribiremos:
+
+  Escribiremos:
 
 object Service "ssh" {
     import "generic-service"
