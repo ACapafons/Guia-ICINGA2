@@ -428,12 +428,57 @@ object Service "ssh" {
 ![monitorizacion](https://user-images.githubusercontent.com/90779690/171417667-445620cf-0d0a-445b-b96e-c64e9bb79d44.png)
 
 
+Para continuar debemos instalar el postfix mailtuls, esto lo haremos mediante el siguiente comadndo:
 
+```bash
+sudo apt-get install postfix mailutils
+```
+Despues de ejecutar el comando, se nos abrirá un asistente y seguiremos mediantes las siguientes instrucciones.
 
+ En la primera pantalla del asistente nos saldrá la configuración del servidor de correo.
+ Nos dara las opciones de:
+  • Sin Configuración.
+  • Sitios de internet. *Escogeremos esta opción.*
+  • Internet con <<smarthost>>.
+  • Sistema satélite.
+  • Sólo correo local.
 
+Después de escoger las opción indicada, continuaremos.
+  
+Pondremos el correo que queremos que tenga el servidor y contianuamos.
+  
+Una vez terminada la instalación, iremos al archivo
 
+```bash
+ /etc/icinga2/conf.d/users.conf
+  ```
+  
+El fichero tiene que quedar de la siguiente manera:
 
+```bash
+  /**
+ * The example user 'icingaadmin' and the example
+ * group 'icingaadmins'.
+ */
 
+object User "icingaadmin" {
+  import "generic-user"
+
+  display_name = "Icinga 2 Admin"
+  groups = [ "icingaadmins" ]
+
+  email = "sergiodtd@gmail.com"
+}
+
+object UserGroup "icingaadmins" {
+  display_name = "Icinga 2 Admin Group"
+}
+Para recibir notificaciones de un servicio determinado pondremos la línea de comando siguiente dentro de hosts.conf y services.conf:
+
+vars.notification["mail"] = {
+ groups = [ "icingaadmins" ]
+}
+ ```
 
 
 
